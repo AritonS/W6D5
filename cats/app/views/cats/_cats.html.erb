@@ -1,0 +1,15 @@
+<ul>
+    <li>
+        <% if action == :show %>
+            <a href="<%= cats_url %>">Back to Index</a>
+        <% else %>
+            <a href="<%= cat_url(cat) %>">Show Page</a>
+        <% end %>
+    </li>
+    <li> <%= cat.id %> </li>
+    <li> <%= cat.birth_date %> </li>
+    <li> <%= cat.color %> </li>
+    <li> <%= cat.name %> </li>
+    <li> <%= cat.sex %> </li>
+    <li> <%= cat.description %> </li>
+</ul>
